@@ -1,0 +1,393 @@
+html {
+    box-sizing: border-box;
+    line-height: 1.15;
+    font-size: 10px;
+}
+
+body {
+    line-height: 1.5;
+    font-family: Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1.8em;
+    color: #000;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/************ header ************/
+header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3000;
+    box-shadow: 0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15);
+}
+
+#dom-logo {
+    height: 60px;
+}
+
+#main-navigation {
+    background-color: #8c1515;
+    box-shadow: 0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15);
+    transition: display .5s ease-in;
+    position: fixed;
+    top: 60px;
+    z-index: 3000;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+.navbar {
+    justify-content: center;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navbar ul li {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.navbar ul li a{
+    color: #fff;
+}
+
+#my-apps-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#my-apps-container button {
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    background-color: #8c1515;
+}
+
+.affix-nav {
+    z-index: 2000;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 70px;
+    right: 5%;
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.affix-nav span {
+    color: #fff;
+    font-size: 22px;
+}
+
+/* color */
+.app-header {
+    color: #8c1515;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+/*********************** v2 *********************/
+main.affix {
+    position: fixed;
+    margin-top: 60px;
+    overflow: hidden;
+    top: 0;
+    z-index: 1;
+}
+
+#main-spacer {
+    height: 2000px;
+}
+
+#v2 {
+    margin-top: 60px;
+    z-index: 1000;
+    height: 95vh;
+    width: 100%;
+    position: relative;
+    background-color: #f9f6ef;
+    background-size: cover;
+}
+
+.slide-panel {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: calc(100% / 7 - (8px) );
+    float: left;
+    margin-left: 4px;
+    margin-right: 4px;
+    /* background-size: cover !important;*/
+    opacity: 0;
+    transition: all 0.5s linear;
+    background: url('images/campus-big-03.jpg') no-repeat scroll;
+    background-size: cover;
+}
+
+.pre-expand{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.pre-expand p {
+    color: #fff;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.pre-expand p span {
+    color: orange;
+    font-size: 1.2em;
+}
+
+.pre-expand h1 {
+    position: absolute;
+    top: 40px;
+    font-size: 6em;
+    color: orange;
+}
+
+.top-blank, .bottom-blank {
+    background-color: rgb(41, 46, 48);
+    width: 100%;
+    position: absolute;
+}
+
+.top-blank {
+    top: 0;
+    transition: all 0.5s ease;
+}
+
+.bottom-blank {
+    bottom: 0;
+    transition: all 0.5s ease;
+}
+
+#panel-1 {
+    background-position-x: calc(-100vw * 0.3 / 7);
+}
+
+#panel-1 .pre-expand .top-blank, #panel-1 .pre-expand .bottom-blank {
+    height: 150px;
+}
+
+#panel-2 {
+    /* background: url('images/campus-big-02.jpg') no-repeat center center; */
+    background-position-x: calc(-100vw * 1.3 / 7);
+}
+
+#panel-2 .pre-expand .top-blank, #panel-2 .pre-expand .bottom-blank {
+    height: 100px;
+}
+
+#panel-3 {
+    /* background: url('images/campus-big-03.jpg') no-repeat center center; */
+    background-position-x: calc(-100vw * 2.3 / 7);
+}
+
+#panel-3 .pre-expand .top-blank, #panel-3 .pre-expand .bottom-blank {
+    height: 50px;
+}
+
+#panel-4 {
+    /* background: url('images/campus-big-04.jpg') no-repeat center center; */
+    background-position-x: calc(-100vw * 3.3 / 7);
+}
+
+#panel-5 {
+    /* background: url('images/campus-big-01.jpg') no-repeat center center; */
+    background-position-x: calc(-100vw * 4.3 / 7);
+}
+
+#panel-5 .pre-expand .bottom-blank, #panel-5 .pre-expand .top-blank {
+    height: 50px;
+}
+
+#panel-6 {
+    /* background: url('images/campus-big-02.jpg') no-repeat center center; */
+    background-position-x: calc(-100vw * 5.3 / 7);
+}
+
+#panel-6 .pre-expand .bottom-blank, #panel-6 .pre-expand .top-blank {
+    height: 100px;
+}
+
+#panel-7 {
+    /* background: url('images/campus-big-03.jpg') no-repeat center center; */
+    background-position-x: calc(-100vw * 6.3 / 7);
+}
+
+#panel-7 .pre-expand .bottom-blank, #panel-7 .pre-expand .top-blank {
+    height: 150px;
+}
+
+.post-expand {
+    opacity: 0;
+    /* background: rgba(0, 0, 0, 0.3); */
+    height: 100%;
+    transition: all 1s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-expand .text-container {
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+}
+
+.post-expand h1 {
+    color: orange;
+    font-size: 4em;
+}
+
+.post-expand p {
+    color: #fff;
+    font-size: 2em;
+    width: 60%;
+}
+
+.arrow-down {
+    position: absolute;
+    bottom: 140px;
+    left: 50%;
+    border: solid #fff;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 0 20px 40px;
+    transform: rotate(45deg);
+}
+
+/* main detail */
+.panel {
+    padding: 90px 60px 60px 60px;
+}
+
+.panel.sand {
+    background-color: #f9f6ef;
+}
+
+.panel.choco {
+    background-color: #2f2424;
+}
+
+.section-header {
+    color: #b1040e;
+    font-size: 3em;
+    text-align: center;
+}
+
+.section-subheader {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* finance */
+.flex-container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: 'row';
+    justify-content: space-between;
+}
+
+.app-card {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, .2);
+}
+
+img {
+    width: 100%;
+}
+
+/* hr */
+#hr {
+    background-image: url('images/hr.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 30%;
+}
+
+.hr-app-card {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, .2);
+}
+
+/* faculty */
+
+/***************** utility **************/
+.no-display {
+    display: none !important;
+}
+
+.no-pointer-event {
+    pointer-events: none;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.hr.app-card {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+/* animation */
+.full-width {
+    width: 100%;
+}
+
+.one-seventh-width {
+    width: calc(100% / 7);
+}
+
+.no-height {
+    height: 0 !important;
+}
+
+.no-width {
+    width: 0%;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.opacity {
+    opacity: 1 !important;
+}
+
+.transparent-bg {
+    background-color: transparent !important;
+}

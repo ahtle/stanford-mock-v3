@@ -1,37 +1,3 @@
-// $(document).ready(function() {
-//     initialAnimation();
-// });
-
-// function initialAnimation() {
-//     let imgArr = [
-//         './images/stanford-01.jpg',
-//         './images/stanford-02.jpg',
-//         './images/stanford-03.jpg',
-//         './images/stanford-04.jpg',
-//         './images/stanford-05.png',
-//         './images/stanford-06.jpeg',
-//         'https://www-media.stanford.edu/wp-content/uploads/2018/05/01105844/admit-weekend-splash-land.jpg'
-//     ];
-
-//     imgArr.forEach(function(url, index) {
-//         setTimeout(function() {
-//             $('#p-img image').attr('href', url);
-//         }, 200 * index);
-//     });
-
-//     // change background
-//     setTimeout(function() {
-//         $('.animation-container .overlay').addClass('opacity-min');
-//         $('.img-layer').css({ fill: "#fff" });
-//         $('.typewriter h1').addClass('dark-orange');
-//     }, 1500);
-
-// }
-
-// $('.nav-link').click(function() {
-//     $('main').removeClass("affix");
-// });
-
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
@@ -61,15 +27,6 @@ $(document).ready(function() {
     setTimeout(() => {
         $('#panel-4').addClass('opacity');
     }, 1200);
-    // setTimeout(() => {
-    //     $('#panel-5').addClass('opacity');
-    // }, 0300);
-    // setTimeout(() => {
-    //     $('#panel-6').addClass('opacity');
-    // }, 600);
-    // setTimeout(() => {
-    //     $('#panel-7').addClass('opacity');
-    // }, 900);
 });
 
 // expand panel
@@ -86,8 +43,9 @@ $('.slide-panel').click(function() {
     // $('.pre-expand').addClass('no-display');
     $('.affix-nav').addClass('opacity');
     
-    $('.pre-expand h1').addClass('no-display');
+    // $('.pre-expand h1').addClass('no-display');
     $('.pre-expand p').addClass('no-display');
+    $('.pre-expand .site-title').addClass('no-display');
     
     setTimeout(function() {
         el.children('.post-expand').removeClass('no-display');
@@ -107,7 +65,8 @@ $('.affix-nav').click(function() {
     
     $('.full-width').siblings().removeClass('no-width');
     $('.full-width').removeClass('full-width');
-    $('.pre-expand h1, .pre-expand p').removeClass('no-display');
+    $('.pre-expand .site-title').removeClass('no-display');
+    $('.pre-expand p').removeClass('no-display');
     $('.post-expand').removeClass('opacity');
     $('.post-expand').addClass('no-display');
 

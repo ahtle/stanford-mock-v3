@@ -133,7 +133,7 @@ main.affix {
     /* background-size: cover !important;*/
     opacity: 0;
     transition: all 0.5s linear;
-    background: url('images/campus-big-03.jpg') no-repeat scroll;
+    background: url('images/lake.jpg') no-repeat scroll;
     background-size: cover;
 }
 
@@ -181,7 +181,7 @@ main.affix {
 }
 
 #panel-1 {
-    background-position-x: calc(-100vw * 0.3 / 7);
+    background-position-x: calc(-100vw * 0 / 7);
 }
 
 #panel-1 .pre-expand .top-blank, #panel-1 .pre-expand .bottom-blank {
@@ -190,7 +190,7 @@ main.affix {
 
 #panel-2 {
     /* background: url('images/campus-big-02.jpg') no-repeat center center; */
-    background-position-x: calc(-100vw * 1.3 / 7);
+    background-position-x: calc(-100vw * 1 / 7);
 }
 
 #panel-2 .pre-expand .top-blank, #panel-2 .pre-expand .bottom-blank {
@@ -199,7 +199,7 @@ main.affix {
 
 #panel-3 {
     /* background: url('images/campus-big-03.jpg') no-repeat center center; */
-    background-position-x: calc(-100vw * 2.3 / 7);
+    background-position-x: calc(-100vw * 2 / 7);
 }
 
 #panel-3 .pre-expand .top-blank, #panel-3 .pre-expand .bottom-blank {
@@ -208,12 +208,12 @@ main.affix {
 
 #panel-4 {
     /* background: url('images/campus-big-04.jpg') no-repeat center center; */
-    background-position-x: calc(-100vw * 3.3 / 7);
+    background-position-x: calc(-100vw * 3 / 7);
 }
 
 #panel-5 {
     /* background: url('images/campus-big-01.jpg') no-repeat center center; */
-    background-position-x: calc(-100vw * 4.3 / 7);
+    background-position-x: calc(-100vw * 4 / 7);
 }
 
 #panel-5 .pre-expand .bottom-blank, #panel-5 .pre-expand .top-blank {
@@ -222,7 +222,7 @@ main.affix {
 
 #panel-6 {
     /* background: url('images/campus-big-02.jpg') no-repeat center center; */
-    background-position-x: calc(-100vw * 5.3 / 7);
+    background-position-x: calc(-100vw * 5 / 7);
 }
 
 #panel-6 .pre-expand .bottom-blank, #panel-6 .pre-expand .top-blank {
@@ -231,7 +231,7 @@ main.affix {
 
 #panel-7 {
     /* background: url('images/campus-big-03.jpg') no-repeat center center; */
-    background-position-x: calc(-100vw * 6.3 / 7);
+    background-position-x: calc(-100vw * 6 / 7);
 }
 
 #panel-7 .pre-expand .bottom-blank, #panel-7 .pre-expand .top-blank {
@@ -252,7 +252,8 @@ main.affix {
     opacity: 0;
     position: absolute;
     top: 30%;
-    left: 0;
+    left: 30px;
+    right: 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
